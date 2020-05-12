@@ -1,0 +1,12 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Chatter</h1>
+  <h4>A CableReady / StimilusReflex demo</h4>
+
+  <%= render "form" %>
+
+  <div id="timeline">
+    <%= render partial: "post", collection: @posts %>
+  </div>
+</div>
